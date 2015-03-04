@@ -17,8 +17,8 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
         <!-- fonts here -->
-
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -28,16 +28,22 @@
         <!-- Add your site or application content here -->
         <div id="container">
            
-            <header>
-                <div id="main_image"><img src="img/main.jpg" alt=""></div>
-                <div id="main_content">
-                    <h2>Lorem</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+           <section data-page="section-1">
+                <header>
+                    <div id="main_image"><img src="img/main.jpg" alt=""></div>
+                    <div id="main_content">
+                        <h2>Lorem</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </header>
+            </section>
 
-            </header>
+        <!--     <section data-page="section-1">1</section>
+            <section data-page="section-2">2</section>
+            <section data-page="section-3">3</section> -->
 
-            <section>
+        <section data-page="section-2">
+            <div id="body">
                 <div id="body sample_work">
                     <ul>
                         <li>   
@@ -69,8 +75,10 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </div>
+        </section>
 
+        <section data-page="section-3">
             <footer>
                 <div class="footer_image"><img src="" alt=""></div>
                     <div id="footer_info">
@@ -78,13 +86,16 @@
                         </p>
                     </div>
             </footer>
+        </section>
 
-        </div>
+    </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/pageScroll.js"></script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -95,5 +106,11 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+        <nav class="ctrlPage" style="height:100px">
+            <div class="btnCtrl active"></div>
+            <div class="btnCtrl"></div>
+            <div class="btnCtrl"></div>
+        </nav>
     </body>
 </html>

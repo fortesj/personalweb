@@ -146,13 +146,6 @@ ul{
 
 
 
-/*side bar navigation begins*/
-
-
-
-
-
-
 
 
 
@@ -177,6 +170,51 @@ ul{
 
 @media only screen and (min-width : 61em) { 
 /*desktop view*/
+
+
+
+
+
+
+/*side bar navigation begins*/
+
+section[data-page] {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  outline: 4px black solid;
+}
+
+nav.ctrlPage,
+nav.ctrlPage div {
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: background 0.3s linear;
+  cursor: pointer;
+}
+
+nav.ctrlPage {
+  position: fixed;
+  right: 1%;
+  width: 25px;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+nav.ctrlPage div {
+  box-sizing: border-box;
+  margin: 15% auto;
+  width: 20px;
+  height: 20px;
+  background: white;
+}
+ 
+nav.ctrlPage div.active {
+background: black; 
+}
 
 }
 
